@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+  int arr[100], size, c, l= 0;
+
+  printf("Enter the number of elements in array\n");
+  scanf("%d", &size);
+  for (c = 0; c < size; c++)
+    scanf("%d", &arr[c]);
+
+  for (c = 1; c < size; c++)
+    if (arr[c] > arr[l])
+      l = c;
+
+  printf("Maximum element is present at location %d and its value is %d.\n", l+1, arr[l]);
+  return 0;
+}

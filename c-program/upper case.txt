@@ -1,0 +1,34 @@
+#include <stdio.h>
+// #include <ctype.h>
+#include <string.h>
+
+int main()
+{ 
+    char a[30];
+    char b;
+    int i;
+    printf("Enter the string:");
+    gets(a);
+    for(i=0;a[i]!='\0';i++)
+    {
+        if(a[i] >= 'a' && a[i] <= 'z') 
+        {
+            a[i]=a[i]-32;
+            
+        }
+    }
+      printf("%s",a); 
+    // while(a[i]){
+    //     if(a[i] == " " )
+    //         {
+    //             printf("\n");
+    //         }
+    //         printf("%s",a);
+            
+        
+   
+     
+    
+   
+    return 0;
+}

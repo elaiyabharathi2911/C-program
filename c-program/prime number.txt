@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,n,m,cnt;
+    printf("Enter the end number:");
+    scanf("%d",&n);
+    for(m=1;m<=n;m++)
+    {
+        cnt=0;
+        for(i=2;i<=m/2;i++)
+        {
+            if(m%i==0)
+            {
+               cnt++;
+               break;
+            }
+        }
+        if(m!=1 && cnt==0)
+        {
+            printf("%d ",m);
+        }
+    }
+    
+    return 0;
+}

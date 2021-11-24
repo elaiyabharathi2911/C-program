@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+   char a[20];
+   int first,last,mid,len=0;
+   printf("Enter the string:");
+   scanf("%s",a);
+   while(a[len]!='\0')
+   {
+       len++;
+       
+   }
+   last=len-1;
+   mid=len/2 ;
+   for(first=0;first<mid;first++)
+   {
+       if(a[first]!=a[last]){
+            printf("a is not a palindrome");
+            break;
+            
+         
+       
+           
+       }
+       last--;
+    }
+    if(first==mid)
+    {
+        printf("it is palindrome");
+    }
+   
+       
+      
+   
+    
+    return 0;
+}

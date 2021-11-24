@@ -1,0 +1,6 @@
+
+npm uninstall -g react-native-cli
+
+npm i -g @react-native-community/cli
+
+npx react-native init MyApp
